@@ -63,4 +63,3 @@ aligned_data_z = np.roll(data_z, (int(x_offset_z[0][0]), int(y_offset_z[0][0])),
 # Combine the spectral bands into a tensor
 tensor_spectral = np.stack([data_r, aligned_data_g, aligned_data_i, aligned_data_u, aligned_data_z], axis=-1)
 
-print("Tensor shape:", tensor_spectral.shape)
